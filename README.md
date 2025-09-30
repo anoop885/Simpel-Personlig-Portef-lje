@@ -1,4 +1,4 @@
-Personlig nettside laget med HTML og CSS
+#Personlig nettside laget med HTML og CSS-
 
  Utviklet et porteføljenettsted for å presentere prosjekter og
  ferdigheter. Planer om å ekspandere og forbedre nettsiden, og å legge til flere prosjekter i nettsiden.
