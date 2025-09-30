@@ -1,0 +1,185 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    color: #222;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+    }
+
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    }
+
+
+.landing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    background: linear-gradient(135deg, #f0f0f0, #d0e0ff);
+    padding: 20px;
+    }
+
+.profilbilde {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 20px 0;
+    border: 3px solid #0077cc;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.profilbilde:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+
+.tagline {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+
+.scroll-btn {
+    margin: 8px 0;
+    text-decoration: none;
+    color: #0077cc;
+    font-weight: bold;
+    padding: 8px 15px;
+    border: 1px solid #0077cc;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    width: 200px; 
+    max-width: 90%;
+    text-align: center;
+    min-width: 120px; 
+}
+
+.scroll-btn:hover {
+    background-color: #0077cc;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+}
+
+
+section h2 {
+    border-bottom: 2px solid #0077cc;
+    padding-bottom: 5px;
+    margin-top: 40px;
+}
+
+
+#prosjekter {
+    display: flex;
+    flex-direction: column;
+    }
+
+.prosjekt {
+    background: #fff;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+.prosjekt h3 {
+    margin-top: 0;
+}
+
+.prosjekt a {
+    color: #0077cc;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.prosjekt a:hover {
+    text-decoration: underline;
+    padding: 2px 6px;
+}
+
+
+footer {
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;   
+}
+
+
+/* Media queries for små skjermer */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    section h2 {
+        font-size: 1.2rem;
+    }
+
+    .landing h1 {
+        font-size: 1.5rem;
+    }
+
+    .scroll-btn {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-height: 500px), (max-width: 400px) {
+    .landing {
+        min-height: auto;
+        padding: 20px 10px; 
+    }
+    .profilbilde {
+        width: 120px;
+        height: 120px;
+        transition: width 0.3s ease, height 0.3s ease;
+    }
+
+    .landing h1 {
+        font-size: 1.5rem;
+    }
+
+    .tagline {
+        font-size: 0.9rem;
+    }
+
+    .scroll-btn {
+        width: 100%;
+        padding: 6px 0;
+        margin: 5px 0;
+    }
+}
+
+
